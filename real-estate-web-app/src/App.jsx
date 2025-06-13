@@ -11,15 +11,13 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <div className="w-full h-0 overflow-hidden ">
-        <ToastContainer />
-        <Header />
-        <About />
-        <Projects />
-        <Testimonails />
-        <Contact />
-        <Footer />
-      </div>
+      <ToastContainer />
+      <Header />
+      <About />
+      <Projects />
+      <Testimonails />
+      <Contact />
+      <Footer />
     </>
   );
 };
