@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 
 const Navbar = () => {
@@ -28,10 +28,10 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="#Testimonials"
+            href="#Testimonails"
             className="cursor-pointer hover:text-gray-400 "
           >
-            Testimonials
+            Testimonails
           </a>
         </ul>
         <button className="hidden md:block bg-white px-8 py-2 rounded-full">
@@ -47,9 +47,9 @@ const Navbar = () => {
 
       {/* ____________Mobile Menu______________ */}
       <div
-        className={`md:hidden ${
-          showMobileMenu ? "fixed w-full" : "h-0 w-0"
-        } right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}
+        className={`md:hidden fixed top-0 left-0 w-full h-full bg-white transition-all duration-300 ${
+          showMobileMenu ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
       >
         <div className="flex justify-end p-6 cursor-pointer">
           <img
@@ -83,10 +83,10 @@ const Navbar = () => {
           </a>
           <a
             onClick={() => setShowMobileMenu(false)}
-            href="#Testimonials"
+            href="#Testimonails"
             className="px-4 py-2 rounded-full inline-block"
           >
-            Testimonials
+            Testimonails
           </a>
         </ul>
       </div>
